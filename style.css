@@ -39,6 +39,7 @@ li.box{
 li button{
     float: right;
     font-size: 20px;
+    margin-left: 5px;
 }
 .task{
     font-size: 18px;

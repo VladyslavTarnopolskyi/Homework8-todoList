@@ -19,18 +19,13 @@ window.addEventListener('load', function () {
         var addItem = $('#todo-enter').val();
         if(addItem !== '') {
             todoList.prepend('<li class="box">' + '<span class="text-todo">' + addItem + '</span>'
-                + '<button class="edit-item">Edit</button>'
                 + '<button class="del-item">X</button>'
+                + '<button class="edit-item">Edit</button>'
                 + '</li>');
             $('#todo-enter').val('');
         }else {
             alert('write something');
         }
-        var i = 0;
-        $(".text-todo").each(function(){
-            $(this).attr("id","id_"+i);
-            i++;
-        });
         saveToLocSt();
         counter();
     }
@@ -53,17 +48,14 @@ window.addEventListener('load', function () {
     }
 
     function editItem(){
-        $('#copyLi').val($(this).siblings('span').text());
+        var textItem = $(this).siblings('span');
+        $('#copyLi').val(textItem.text());
         $('#edit').css('display', 'block');
-        //var spanID = $(this).siblings('span').attr('id');
-        $('#save').on('click', function (){
-            // сейв непрацює....треба доробити...покищо рішення не знайшов
-            // var saveI = $('#edit-input').val();
-            // $(spanID).text(saveI);
+        $('#save').on('click', function () {
+            textItem.text($('#copyLi').val());
             $('#edit').css('display', 'none');
             saveToLocSt();
         });
-
         $('#cancel').on('click', function (){
             $('#edit').css('display', 'none');
         });
