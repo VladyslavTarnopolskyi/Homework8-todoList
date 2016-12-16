@@ -2,6 +2,7 @@
 
 *install "npm install "*
 - jquery
-- jquery-ui
 - materialize-css
+- jquery-ui-dist
+
 
