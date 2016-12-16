@@ -1,6 +1,7 @@
-Homework8-todoList
-Node.js
+#Homework8-todoList
+
+*install "npm install "*
 - jquery
+- jquery-ui
 - materialize-css
 
-install "npm install "

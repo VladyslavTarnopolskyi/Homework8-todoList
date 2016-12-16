@@ -9,14 +9,10 @@ body{
     width: 500px;
 }
 input[type='text']{
-    padding: 15px;
     border: none;
     font-size: 28px;
 }
-#copyLi{
-    width: auto;
-    background-color: #ffffff;
-}
+
 #todo-list{
     margin: 0;
     padding: 0;
@@ -24,9 +20,6 @@ input[type='text']{
 #add-press{
     width: 100%;
     font-size: 32px;
-}
-#clear{
-    border-radius: 0 5px 0 5px;
 }
 li.box{
     position: relative;
@@ -38,7 +31,7 @@ li.box{
 
 li button{
     float: right;
-    font-size: 20px;
+    font-size: 14px;
     margin-left: 5px;
 }
 .task{
@@ -47,15 +40,6 @@ li button{
 }
 .button-edit, .button-delete, #save, #cancel {
     margin: 3px 4px 0 0;
-
-}
-.button-delete:hover, #clear:hover, #cancel:hover{
-    border-color: red;
-    background: red;
-}
-.button-edit:hover,  #save:hover{
-    border-color: #45D637;
-    background: #45D637;
 }
 .text-todo{
     margin-left: 35px;
@@ -76,6 +60,14 @@ li button{
 }
 
 /*  popup  */
+#popup{
+    width: 500px;
+    height: 200px;
+    margin: 0 auto;
+    padding: 50px;
+    background-color: #fff;
+    border-radius: 10px;
+}
 #edit {
     display: none;
     position: fixed;
